@@ -1,0 +1,322 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/accountPerticularsMainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp" >
+
+        <Button
+            android:id="@+id/addExpenseBtn"
+            style="@style/btnStyleOrange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Expense" />
+
+        <Button
+            android:id="@+id/addSareeBtn"
+            style="@style/btnStyleOrange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Saree" />
+ <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal" >
+
+         <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Total Sarees Received:"
+        android:gravity="right"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+          <TextView
+        android:id="@+id/totalsareesRecievedTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+        
+     <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+         <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Total Sarees Pending:"
+        android:gravity="right"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+          <TextView
+        android:id="@+id/totalsareesRemainingTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+        
+        </LinearLayout>
+
+        
+    </LinearLayout>
+
+   
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+         >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:gravity="center_horizontal" >
+
+            <TextView
+                android:layout_span="3"
+                android:background="@android:color/holo_blue_dark"
+                android:gravity="center_horizontal"
+                android:text="Date"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_span="3"
+                android:background="@android:color/holo_blue_dark"
+                android:gravity="left"
+                android:text="Particulars"
+                android:textColor="@android:color/white" />
+
+ 			<TextView
+                android:layout_span="2"
+                android:background="@android:color/holo_blue_dark"
+                android:gravity="center_horizontal"
+                android:text="# Items"
+                android:textColor="@android:color/white" />
+            <TextView
+                android:layout_span="2"
+                android:background="@android:color/holo_blue_dark"
+                android:gravity="right"
+                android:text="Rate"
+                android:textColor="@android:color/white" />
+            
+            <TextView
+                android:layout_span="2"
+                android:background="@android:color/holo_blue_dark"
+                android:text="Amount"
+                android:gravity="right"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_span="2"
+                android:background="@android:color/holo_blue_dark"
+                android:text="Exp. Amount"
+                android:gravity="right"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_span="3"
+                android:background="@android:color/holo_blue_dark"
+                android:gravity="right"
+                android:text="Advance Amount"
+                android:textColor="@android:color/white" />
+        </TableRow>
+        
+    </TableLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="197dp"
+        android:layout_weight="0.89" >
+
+            <TableLayout
+                android:id="@+id/accountPerticularsLayout"
+     xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*" >
+            
+                            </TableLayout>
+    </ScrollView>
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:paddingTop="2dp">
+
+            <TextView
+                android:layout_span="3"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_span="3"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_span="2"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="@android:color/black" />
+            
+            <TextView
+                android:layout_span="3"
+                android:background="@android:color/white"
+                android:gravity="left"
+                android:text="Total:"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/totalRate"
+                android:layout_span="2"
+                android:background="@android:color/white"
+                android:gravity="right"
+                android:text=""
+                />
+
+            <TextView
+                android:id="@+id/totalAmount"
+                android:layout_span="2"
+                android:background="@android:color/white"
+                android:gravity="right"
+                android:text=""
+                 />
+
+            <TextView
+                android:id="@+id/totalAdAmount"
+                android:layout_span="3"
+                android:background="@android:color/white"
+                android:gravity="right"
+                android:text=""
+                />
+        </TableRow>
+                <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:paddingTop="2dp" >
+
+            <TextView
+                android:layout_span="3"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_span="3"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_span="2"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_span="3"
+                android:background="@android:color/white"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@android:color/black" />
+			
+            <TextView
+                android:id="@+id/totalAmountForDiff"
+                android:layout_span="2"
+                android:background="@android:color/white"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_span="2"
+                android:background="@android:color/white"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@android:color/black" />
+            
+            <TextView
+                android:id="@+id/totalAvailableAmnt"
+                android:layout_span="3"
+                android:background="@android:color/white"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@android:color/black" />
+        </TableRow>
+        
+                                <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:paddingTop="2dp">
+
+            <TextView
+                android:layout_span="3"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_span="3"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="@android:color/black" />
+			
+			<TextView
+                android:layout_span="2"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_span="3"
+                android:background="@android:color/white"
+                android:gravity="left"
+                android:text="Balance:"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/totalAmountExpenseDiff"
+                android:layout_span="2"
+                android:background="@android:color/white"
+                android:gravity="right"
+                android:text=""
+                />
+
+            <TextView
+                android:layout_span="2"
+                android:background="@android:color/white"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@android:color/black" />
+            
+            <TextView
+                android:id="@+id/totalAdAmountDiff"
+                android:layout_span="3"
+                android:background="@android:color/white"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@android:color/black" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

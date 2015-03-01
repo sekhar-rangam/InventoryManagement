@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mkyong.android"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="10" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:debuggable="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.sekhar.android.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sekhar.android.AccountItemListActivity"
+            android:label="Account Item List" >
+        </activity>
+        <activity
+            android:name="com.sekhar.android.AccountItems"
+            android:label="Account Items" >
+        </activity>
+        <activity
+            android:name="com.sekhar.android.AccountList"
+            android:label="Account List" >
+        </activity>
+        <activity
+            android:name="com.sekhar.android.ItemTypeList"
+            android:label="Item Type List" >
+        </activity>
+        <activity
+            android:name="com.sekhar.android.ReportAccountItems"
+            android:label="Report" >
+        </activity>
+        <activity
+            android:name="com.sekhar.android.AccountReportView"
+            android:label="Account Report View" >
+        </activity>
+        <activity
+            android:name="com.sekhar.android.AccountReportCashPaidView"
+            android:label="Cash Paid Report View" >
+        </activity>
+        <activity
+            android:name="com.sekhar.android.AccountReportSareeReceivedView"
+            android:label="Saree Received Report View" >
+        </activity>
+        <activity
+            android:name="com.sekhar.android.AccountReportFinalView"
+            android:label="Final Account Report View" >
+        </activity>
+    </application>
+
+</manifest>

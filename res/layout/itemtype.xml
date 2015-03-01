@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" android:paddingTop="5dp">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/addItemType"
+            style="@style/btnStyleOrange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Item Type" />
+
+        <ImageButton
+            android:id="@+id/restoreDBButton"
+            android:layout_width="75dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/restoredataicon" />
+
+        <ImageButton
+            android:id="@+id/backUpDBButton"
+            android:layout_width="75dp"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/restoreDBButton"
+            android:src="@drawable/backupdataicon" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Search Item Type"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/itemTypeFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="type name" >
+
+        <requestFocus />
+    </EditText>
+
+    <ListView
+        android:id="@+id/itemTypeListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

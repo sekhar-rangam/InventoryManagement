@@ -1,0 +1,289 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/accountPerticularsMainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="232dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account Details:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" 
+                />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/reportAccountFirstName"
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+                <TextView
+                    android:id="@+id/reportAccountLasttName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/reportAccountPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/reportAccountAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="232dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hari"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prasad"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="S/O Veeraiah"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PG Street,Yadiki"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M:9492222262"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+    </RelativeLayout>
+        
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="197dp"
+        android:layout_weight="1.88" >
+
+        <TableLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/accountPerticularsLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*" >
+            
+        </TableLayout>
+    </ScrollView>
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             >
+
+            <TextView
+                android:layout_span="3"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_span="3"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_span="2"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_span="3"
+                android:background="@android:color/white"
+                android:gravity="left"
+                android:text="Total:"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/totalRate"
+                android:layout_span="2"
+                android:background="@android:color/white"
+                android:gravity="right"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/totalAmount"
+                android:layout_span="2"
+                android:background="@android:color/white"
+                android:gravity="right"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/totalAdAmount"
+                android:layout_span="3"
+                android:background="@android:color/white"
+                android:gravity="right"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             >
+
+            <TextView
+                android:layout_span="3"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_span="3"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_span="2"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_span="3"
+                android:background="@android:color/white"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/totalAmountForDiff"
+                android:layout_span="2"
+                android:background="@android:color/white"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@android:color/black" />
+
+             <TextView
+                android:layout_span="2"
+                android:background="@android:color/white"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@android:color/black" />
+             
+            <TextView
+                android:id="@+id/reportTotalAvailableAmnt"
+                android:layout_span="3"
+                android:background="@android:color/white"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@android:color/black" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             >
+
+            <TextView
+                android:layout_span="3"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_span="3"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_span="2"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_span="3"
+                android:background="@android:color/white"
+                android:gravity="left"
+                android:text="Balance:"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/totalAmountExpenseDiff"
+                android:layout_span="2"
+                android:background="@android:color/white"
+                android:gravity="right"
+                android:text="" />
+
+             <TextView
+                android:layout_span="2"
+                android:background="@android:color/white"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@android:color/black" />
+             
+            <TextView
+                android:id="@+id/reportTotalAdAmountDiff"
+                android:layout_span="3"
+                android:background="@android:color/white"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@android:color/black" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/accountPerticularsMainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:stretchColumns="*"
+         >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:gravity="center_horizontal" >
+
+            <TextView
+                android:layout_span="3"
+                android:background="@android:color/white"
+                android:gravity="left"
+                android:text="Date"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_span="3"
+                android:background="@android:color/white"
+                android:gravity="left"
+                android:text="Name"
+                android:textColor="@android:color/black" />
+
+ 			<TextView
+                android:layout_span="3"
+                android:background="@android:color/white"
+                android:gravity="left"
+                android:text="Particulars"
+                android:textColor="@android:color/black" />
+            <TextView
+                android:layout_span="2"
+                android:background="@android:color/white"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@android:color/black" />
+            
+            <TextView
+                android:layout_span="2"
+                android:background="@android:color/white"
+                android:text=""
+                android:gravity="right"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_span="2"
+                android:background="@android:color/white"
+                android:text=""
+                android:gravity="right"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/accountItemReportHeaderName"
+                android:layout_span="3"
+                android:background="@android:color/white"
+                android:gravity="right"
+                android:text="Amount"
+                android:textColor="@android:color/black" />
+        </TableRow>
+        
+    </TableLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="197dp"
+        android:layout_weight="0.89" >
+
+            <TableLayout
+                android:id="@+id/accountPerticularsLayout"
+     xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*" >
+            
+                            </TableLayout>
+    </ScrollView>
+
+    <TableLayout
+        android:id="@+id/accountItemsReportTableLayout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*" >
+
+       </TableLayout>
+</LinearLayout>

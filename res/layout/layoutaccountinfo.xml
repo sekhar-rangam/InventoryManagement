@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+         android:padding="6dip">
+
+<TableRow
+    android:id="@+id/tableRow1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="No.:"
+               android:textAppearance="?android:attr/textAppearanceSmall"
+               android:textStyle="bold"
+               />
+
+           <TextView
+               android:id="@+id/_id"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_span="2"
+               android:text="" 
+               android:gravity="left"
+               android:textAppearance="?android:attr/textAppearanceSmall"/>
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="50dp"
+        android:text="First Name: "
+         android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/firstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_span="6"
+        android:gravity="left"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="50dp"
+        android:text="Last Name: "
+         android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/lastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_span="5"
+        android:gravity="left"
+        android:text="" />
+</TableRow>
+       
+</TableLayout>

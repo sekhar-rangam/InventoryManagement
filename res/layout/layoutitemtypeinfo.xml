@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+         >
+ <TableRow
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content" >
+    <TextView
+        android:layout_width="wrap_content"
+        android:width="10dp"
+        android:layout_height="wrap_content"
+        android:text="Name: "
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    <TextView
+        android:id="@+id/itemTypeNameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_span="4"
+        android:text="" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:width="50dp"
+        android:layout_height="wrap_content"
+        android:text="Market Price:"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/itemTypeMarketPriceLayout"
+        android:layout_width="wrap_content"
+        android:layout_span="3"
+        android:gravity="left"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unit Measure:"
+        android:width="50dp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <TextView
+        android:id="@+id/itemTypeMeasureLayout"
+        android:layout_width="wrap_content"
+        android:layout_span="1"
+        android:gravity="left"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    
+    </TableRow>
+
+</TableLayout>
